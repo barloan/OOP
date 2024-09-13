@@ -66,15 +66,12 @@ namespace _1
             int impliciti = a13;
             long implicitl = a13;
             short implicits = a2;
-            Console.WriteLine(implicitd + " " + implicitf + " " + impliciti + " " + implicitl + " " + implicitl + " " + implicits);
 
-            int expliciti = (int)(a7 + a8);
-            short explicitsh = (short)(a7 + a8);
-            long explicitl = (long)(a7 + a8);
-            byte explicitb = (byte)(a7 + a8);
-            sbyte explicits = (sbyte)(a7 + a8);
-            Console.WriteLine(explicitb + " " + explicits + " " + explicitsh + "  " + expliciti + "  " + explicitl);
-            Console.WriteLine();
+            int expliciti = (int)(a7);
+            short explicitsh = (short)(a7);
+            long explicitl = (long)(a8);
+            byte explicitb = (byte)(a13);
+            sbyte explicits = (sbyte)(a7);
 
             //1c (упаковка и распоковка)
             Object boxing = a8;
@@ -149,7 +146,7 @@ namespace _1
             //3a 
             int[,] arr = { { 2, 2 }, { 3, 3 }, { 4,4 } };
             int rows = arr.GetUpperBound(0) + 1;
-            int columns = arr.Length / rows;
+            int columns = 2;
             for (int i = 0; i < rows; i++)
             {
                 for (int k = 0; k < 2; k++)
